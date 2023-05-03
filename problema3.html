@@ -1,0 +1,13 @@
+<meta charset="UTF-8">    
+<script>
+ //O aluno realizou três atividades avaliativas durante o semestre do seu curso de graduação.
+//Cada atividade tinha um peso específico, valendo, respectivamente, 1, 2 e 7.
+//Peça para o aluno informar as notas que obteve em cada atividade avaliativa.
+//Calcule e apresente a média semestral do aluno.
+const nota1= Number (prompt(`Qual nota você tirou na primeira atividade?`).replace(",","."));  
+const nota2= Number (prompt(`Qual nota você tirou na segunda atividade?`).replace(",",".")); 
+const nota3= Number (prompt(`Qual nota você tirou na terceira atividade?`).replace(",","."));
+const media= (nota1*1)+(nota2*2)+(nota3*7);
+const mediaFinal= media/(1+2+7);
+alert (`A sua média final será ${mediaFinal.toFixed(2).replace(".",",")}`);  
+</script>
